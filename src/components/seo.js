@@ -68,6 +68,40 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+
+        // Open Graph
+        {
+          property: `og:url`,
+          content: `https://www.underlost.xyz`,
+        },
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        {
+          property: `og:title`,
+          content: `underlost.xyz`,
+        },
+        {
+          property: `og:description`,
+          content: `A development lab that builds innovative web and mobile experiences.`,
+        },
+        {
+          property: `og:image`,
+          content: `https://www.underlost.xyz/images/underlost.jpg`,
+        },
+        {
+          property: `og:image:secure_url`,
+          content: `https://www.underlost.xyz/images/underlost.jpg`,
+        },
+        {
+          property: `og:image:width`,
+          content: `1200`,
+        },
+        {
+          property: `og:image:height`,
+          content: `630`,
+        }
       ].concat(meta)}
     />
   )
