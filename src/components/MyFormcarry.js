@@ -137,7 +137,7 @@ function MyFormcarry() {
             <div className="mb-4">
               <label
                 htmlFor="message"
-                class="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
+                class="block mb-2 text-lg font-medium text-white"
               >
                 Your message
               </label>
