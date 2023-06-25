@@ -2,6 +2,7 @@
 module.exports = {
   future: {},
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  important: true,
   theme: {
     fontFamily: {
       sans: [

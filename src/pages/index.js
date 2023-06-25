@@ -58,8 +58,9 @@ const IndexPage = () => (
       <StaticImage
         src="../images/background.jpg"
         alt="Backgrdound Image"
-        className="absolute inset-0 z-0 w-full h-full object-cover opacity-25 object-top"
-        width={800}
+        className="!absolute !inset-0 z-0 !w-full !h-full !object-cover !opacity-25 !object-top"
+        placeholder="blurred"
+        layout="fullWidth"
       />
     </header>
 
@@ -170,7 +171,7 @@ const IndexPage = () => (
       <div className="mx-auto max-w-3xl">
         <ol className="mb-24">
           <li className="mb-4">
-            <h3 className="uppercase font-bold inline pr-2 text-xl underline">
+            <h3 className="uppercase font-bold inline pr-2 text-xl underline text-lime">
               Marketing Sites & Landing Pages
             </h3>
             <p className="inline text-lg">
@@ -181,7 +182,7 @@ const IndexPage = () => (
           </li>
 
           <li className="mb-4">
-            <h3 className="uppercase font-bold inline pr-2 text-xl underline">
+            <h3 className="uppercase font-bold inline pr-2 text-xl underline text-lime">
               Ecommerce Solutions
             </h3>
             <p className="inline text-lg">
@@ -192,7 +193,7 @@ const IndexPage = () => (
           </li>
 
           <li className="mb-4">
-            <h3 className="uppercase font-bold inline pr-2 text-xl underline">
+            <h3 className="uppercase font-bold inline pr-2 text-xl underline text-lime">
               Web Apps
             </h3>
             <p className="inline text-lg">
@@ -204,7 +205,7 @@ const IndexPage = () => (
           </li>
 
           <li className="mb-4">
-            <h3 className="uppercase font-bold inline pr-2 text-xl underline">
+            <h3 className="uppercase font-bold inline pr-2 text-xl underline text-lime">
               DevOps
             </h3>
             <p className="inline text-lg">
@@ -215,7 +216,7 @@ const IndexPage = () => (
           </li>
 
           <li className="mb-4">
-            <h3 className="uppercase font-bold inline pr-2 text-xl underline">
+            <h3 className="uppercase font-bold inline pr-2 text-xl underline text-lime">
               AI Prompt Engineering
             </h3>
             <p className="inline text-lg">
