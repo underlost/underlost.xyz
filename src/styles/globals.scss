@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "_fonts.scss";
+
+html,
+body {
+  @apply transition duration-150 ease-in-out antialiased;
+  @apply bg-darkviolet text-plum;
+}
+
+@import "_homepage.scss";
+@import "_content.scss";
+
+.btn {
+  &.btn-primary {
+    @apply bg-lime text-black px-4 py-2 uppercase font-bold;
+  }
+}
+
+.blinker {
+  display: inline-block;
+  transform: scale(1.5) translateY(-1px);
+  animation: blinker 1.2s infinite;
+  @apply w-3 h-4 bg-plum;
+}
+
+@keyframes blinker {
+    0% { opacity: 1; }
+    49% { opacity: 1 }
+    50% { opacity: 0; }
+    99% { opacity: 0; }
+    100%{ opacity: 1; }
+}

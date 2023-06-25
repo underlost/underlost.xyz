@@ -1,0 +1,57 @@
+.gh-canvas {
+  display: grid;
+  grid-template-columns: [full-start] minmax(max(4vmin, 20px), auto) [wide-start] minmax(auto, 240px) [main-start] min(720px, calc(100% - max(8vmin, 40px))) [main-end] minmax(auto, 240px) [wide-end] minmax(max(4vmin, 20px), auto) [full-end];
+
+  &>* {
+    grid-column: main-start / main-end;
+  }
+}
+
+.gh-content {
+
+  @apply text-xl;
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-black text-white;
+  }
+
+  h1 {
+    @apply text-4xl mb-5;
+  }
+
+  h2 {
+    @apply text-3xl mb-4;
+  }
+
+  h3 {
+    @apply text-2xl mb-1;
+  }
+
+  h4 {
+    @apply text-xl mb-2;
+  }
+
+  p {
+    @apply mb-5;
+  }
+
+  p a {
+    @apply text-lime underline hover:text-white;
+  }
+
+  ol {
+    @apply list-decimal list-inside mb-5 space-y-1;
+  }
+
+  ol li {
+    @apply mb-2;
+  }
+
+  ul {
+    @apply list-disc list-inside mb-5;
+  }
+
+  hr {
+    @apply my-8 border-plum;
+  }
+}
