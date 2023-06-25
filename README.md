@@ -1,3 +1,3 @@
-# Boredable
+# underlost.xyz
 
-A landing page for the Boredable app.
+A development lab that builds innovative web and mobile experiences.
