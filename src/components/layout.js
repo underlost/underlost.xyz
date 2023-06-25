@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
             <a
               target="_blank"
               rel="noreferrer noopener"
-              href="instagram.com/underlost/"
+              href="https://instagram.com/underlost/"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
             <a
               target="_blank"
               rel="noreferrer noopener"
-              href="twitter.com/underlost"
+              href="https://twitter.com/underlost"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
