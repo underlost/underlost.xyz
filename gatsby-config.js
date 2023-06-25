@@ -42,7 +42,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "G-BB8LK3NRV3",
+        trackingId: "G-ZGTS859H8E",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         // Setting this parameter is optional
@@ -64,7 +64,7 @@ module.exports = {
         // Any additional optional fields
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: "boredable.com",
+        cookieDomain: "underlost.xyz",
       },
     },
     {
