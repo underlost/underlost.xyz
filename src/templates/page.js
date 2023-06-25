@@ -21,7 +21,7 @@ const TemplatePage = ({ data: { mdx }, children }) => {
       <Seo title={mdx.frontmatter.title} />
 
       <header className="pt-40 mb-16 gh-canvas">
-        <h1 className="text-4xl lg:text-6xl font-black lg:pr-52 text-mindaro">
+        <h1 className="text-4xl lg:text-6xl font-black pr-16 lg:pr-52 text-mindaro">
           {mdx.frontmatter.title}
         </h1>
       </header>
