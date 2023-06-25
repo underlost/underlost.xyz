@@ -89,7 +89,7 @@ const Layout = ({ children }) => {
           </div>
 
           <p>
-            Copyright ©{" "}
+            underlost™ is copyright ©{" "}
             <a
               className="font-bold"
               target="_blank"
@@ -98,7 +98,7 @@ const Layout = ({ children }) => {
             >
               Tyler Rilling
             </a>{" "}
-            2001 - {new Date().getFullYear()} ❤️
+            2001 - {new Date().getFullYear()}. All rights reserved. ❤️
           </p>
         </footer>
       </div>

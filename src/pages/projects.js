@@ -10,7 +10,7 @@ const ProjectPage = () => (
 
     <header className="pt-40 mb-16 gh-canvas">
       <h1 className="text-6xl font-black lg:pr-52 text-mindaro">
-        A few projects I've worked on
+        A few client projects I've worked on
       </h1>
     </header>
     <div className="gh-content gh-canvas content">
