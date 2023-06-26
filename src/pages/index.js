@@ -175,7 +175,7 @@ const IndexPage = () => (
               Marketing Sites & Landing Pages
             </h3>
             <p className="inline text-lg">
-              I an build compelling marketing sites and landing pages that
+              I can build compelling marketing sites and landing pages that
               showcase your brand and drive user engagement, all while equipping
               you with powerful SEO strategies.
             </p>

@@ -41,7 +41,7 @@ const ProjectPage = () => (
 
         <div className="break-after-column break-inside-avoid mb-16">
           <a
-            href="https://underlost.net/portfolio/modern-den/"
+            href="https://underlost.net/portfolio/pincuisine/"
             target="_blank"
             rel="noreferrer noopener"
             className="hover:text-lime"
@@ -143,7 +143,7 @@ const ProjectPage = () => (
 
         <div className="break-after-column break-inside-avoid mb-16">
           <a
-            href="https://underlost.net/portfolio/wonderstream/"
+            href="https://underlost.net/portfolio/314dc/"
             target="_blank"
             rel="noreferrer noopener"
             className="hover:text-lime"
