@@ -12,7 +12,7 @@ const NotFoundPage = () => (
       </h1>
     </header>
     <div className="gh-content gh-canvas content pb-32">
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <p>You just hit a page that doesn&#39;t exist... the sadness.</p>
     </div>
   </Layout>
 )

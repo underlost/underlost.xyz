@@ -79,16 +79,16 @@ function MyFormcarry() {
             <div class="relative z-0 w-full mb-6 group">
               <input
                 type="text"
-                name="referal"
-                id="floating_referal"
+                name="referral"
+                id="floating_referral"
                 className="block py-2.5 px-0 w-full text-sm text-lime bg-transparent border-0 border-b-2 border-plum appearance-none focus:outline-none focus:ring-0 focus:border-lime peer"
                 placeholder=" "
               />
               <label
-                htmlFor="floating_referal"
+                htmlFor="floating_referral"
                 className="peer-focus:font-medium absolute text-lg text-plum duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-lime peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-sm"
               >
-                Referal
+                Referral
               </label>
               <p className="pt-1">
                 Were you refered to me by a previous client? I would love to
@@ -109,11 +109,17 @@ function MyFormcarry() {
                   name="budget"
                   className="bg-violet border border-plum text-plum text-lg focus:ring-lime focus:border-lime block w-full p-2.5"
                 >
-                  <option value="$5-8k">$5000-$8000</option>
+                  <option value="$5-8k">$4000-$8000</option>
                   <option value="$8-12k">$8000-$12,000</option>
                   <option value="$12k+">$12,000+</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
+              <p className="pt-1">
+                Generally, I no longer accept projects under $4000. However, I
+                review all proposals that come my way and occasionally take on
+                smaller, interesting projects!
+              </p>
 
               <div className="col-span-2 lg:col-span-1">
                 <label
