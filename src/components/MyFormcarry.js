@@ -115,11 +115,6 @@ function MyFormcarry() {
                   <option value="other">Other</option>
                 </select>
               </div>
-              <p className="pt-1">
-                Generally, I no longer accept projects under $4000. However, I
-                review all proposals that come my way and occasionally take on
-                smaller, interesting projects!
-              </p>
 
               <div className="col-span-2 lg:col-span-1">
                 <label
@@ -139,6 +134,11 @@ function MyFormcarry() {
                 </select>
               </div>
             </div>
+            <p className="pt-1">
+              Generally, I no longer accept projects under $4000. However, I
+              review all proposals that come my way and occasionally take on
+              smaller, interesting projects!
+            </p>
 
             <div className="mb-4">
               <label
