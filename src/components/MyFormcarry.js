@@ -96,7 +96,7 @@ function MyFormcarry() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 mb-8">
+            <div className="grid grid-cols-2 gap-8">
               <div className="col-span-2 lg:col-span-1">
                 <label
                   htmlFor="budget"
@@ -134,7 +134,7 @@ function MyFormcarry() {
                 </select>
               </div>
             </div>
-            <p className="pt-1">
+            <p className="pt-1 mb-8">
               Generally, I no longer accept projects under $4000. However, I
               review all proposals that come my way and occasionally take on
               smaller, interesting projects!
