@@ -22,12 +22,7 @@ function MyFormcarry() {
       </div>
 
       <div className="bg-white px-8 py-8 border-l border-r border-black">
-        <form
-          name="contact"
-          action="/thank-you/"
-          method="POST"
-          data-netlify="true"
-        >
+        <form name="contact-form" action="/thank-you/" method="post" netlify>
           <div class="relative z-0 w-full mb-6 group">
             <input
               type="text"
