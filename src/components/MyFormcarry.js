@@ -146,6 +146,7 @@ function MyFormcarry() {
             </label>
             <textarea
               id="message"
+              name="message"
               rows="4"
               class="bg-white border border-black text-black text-lg focus:outline-none focus:ring-0 focus:border-lime block w-full p-2.5 placeholder:text-black"
               placeholder="Leave a comment..."
