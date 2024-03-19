@@ -2,16 +2,16 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 
-function Header({ siteTitle }) {
+function Header({ siteTitle, headerClasses }) {
   const [isExpanded, toggleExpansion] = useState(false)
 
   return (
-    <div className="max-w-6xl mx-auto absolute left-0 right-0 top-0 px-8">
+    <div className={`${headerClasses} max-w-6xl mx-auto px-8`}>
       <nav className="flex lg:block flex-wrap items-center justify-between py-6 mb-6 relative z-30">
         <div className="flex items-center flex-shrink-0 lg:block lg:text-center">
           <Link
             to="/"
-            className="text-2xl font-black tracking-tight text-mindaro hover:text-lime"
+            className="text-xl font-black tracking-tight text-mindaro"
           >
             {siteTitle}
           </Link>
@@ -36,29 +36,29 @@ function Header({ siteTitle }) {
             isExpanded ? `block` : `hidden`
           } w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:text-center`}
         >
-          <div className="text-base lg:flex-grow uppercase text-plum bg-darkviolet md:bg-transparent border-violet md:border-transparent p-4 border-2 md:border-0">
+          <div className="text-sm lg:flex-grow uppercase bg-darkviolet md:bg-transparent border-violet md:border-transparent p-4 border-2 md:border-0">
             <Link
               to={`/services/`}
-              className="block mt-4 lg:mx-5 lg:inline-block lg:mt-0 hover:text-white"
+              className="block mt-4 lg:mx-5 lg:inline-block lg:mt-0 hover:underline"
             >
               Services
             </Link>
             <Link
               to={`/about/`}
               href="#responsive-header"
-              className="block mt-4 lg:mx-5 lg:inline-block lg:mt-0 hover:text-white"
+              className="block mt-4 lg:mx-5 lg:inline-block lg:mt-0 hover:underline"
             >
               About
             </Link>
-            <Link
-              to={`/projects/`}
-              className="block mt-4 lg:mx-5 lg:inline-block lg:mt-0 hover:text-white"
+            <a
+              href="https://underlost.net/portfolio/"
+              className="block mt-4 lg:mx-5 lg:inline-block lg:mt-0 hover:underline"
             >
               Projects
-            </Link>
+            </a>
             <Link
               to={`/contact/`}
-              className="block mt-4 lg:mx-5 lg:inline-block lg:mt-0 hover:text-white"
+              className="block mt-4 lg:mx-5 lg:inline-block lg:mt-0 hover:underline"
             >
               Contact
             </Link>

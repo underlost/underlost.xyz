@@ -4,18 +4,74 @@
 
 @import "_fonts.scss";
 
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-wide {
+    font-stretch: 150%;
+  }
+
+  .text-narrow {
+    font-stretch: 0%;
+  }
+}
+
+
 html,
 body {
-  @apply transition duration-150 ease-in-out antialiased;
-  @apply bg-darkviolet text-plum;
+  @apply bg-white text-[#131313] transition duration-300 ease-in-out antialiased;
 }
+
+pre {
+  border-radius: .3em;
+  margin: .5em 0;
+  overflow: auto;
+  padding: 1em;
+  background: #073642;
+}
+
+.bg-splatter {
+  background: #fff url(/images/splatter.jpg) top;
+  background-size: auto;
+  background-size: 1132px 1014px;
+  @apply transition-all duration-150 ease-in-out;
+}
+
 
 @import "_homepage.scss";
 @import "_content.scss";
 
+.swiper-slide {
+  opacity: 0;
+
+  &.swiper-slide-active {
+    opacity: 1;
+  }
+}
+
+.stacked-sm {
+  @apply bg-white border border-black text-black p-5 lg:p-11 w-full relative rounded-sm z-10 antialiased;
+  @apply shadow-[10px_10px_0_-1px_#fff,_10px_10px_0_#000];
+  @apply transition-all duration-150 ease-in-out;
+}
+
+.image-logo-wrapper img {
+  @apply invert dark:filter-none dark:invert-0;
+}
+
 .btn {
-  &.btn-primary {
-    @apply bg-lime text-black px-4 py-2 uppercase font-bold;
+  @apply bg-white border-2 border-black rounded font-mono font-bold px-5 py-3 inline-block shadow-[3px_3px_0_-1px_#000,_3px_3px_0_#000] transition-all duration-150 ease-in-out;
+
+  &:hover {
+    @apply shadow-[0_0_0_-1px_#fff,_0_0_0_#fff] translate-x-[3px] translate-y-[3px];
+  }
+
+  &.btn-lg {
+    @apply text-lg;
   }
 }
 
@@ -23,7 +79,7 @@ body {
   display: inline-block;
   transform: scale(1.5) translateY(-1px);
   animation: blinker 1.2s infinite;
-  @apply w-3 h-4 bg-plum;
+  @apply w-3 h-4 bg-white;
 }
 
 @keyframes blinker {
@@ -32,4 +88,44 @@ body {
     50% { opacity: 0; }
     99% { opacity: 0; }
     100%{ opacity: 1; }
+}
+
+.style-3d {
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  position: relative;
+
+  &:before,
+  &:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    @apply font-black;
+  }
+
+  &:before {
+    content: attr(data-text);
+    -webkit-text-stroke: 2px #FF00BB;
+    transform: translate3d(-3px, -5px, 0);
+    -webkit-text-fill-color: transparent;
+  }
+
+  &:after {
+    content: attr(data-text);
+    -webkit-text-stroke: 2px #00FFEE;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+
+.header-blob {
+  img {
+    @apply object-bottom
+  }
+}
+
+.image-logo-wrapper {
+  img {
+    @apply text-center;
+  }
 }

@@ -88,11 +88,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://www.underlost.xyz/images/underlost.jpg`,
+          content: `https://www.underlost.xyz/images/xyz.jpg`,
         },
         {
           property: `og:image:secure_url`,
-          content: `https://www.underlost.xyz/images/underlost.jpg`,
+          content: `https://www.underlost.xyz/images/xyz.jpg`,
         },
         {
           property: `og:image:width`,

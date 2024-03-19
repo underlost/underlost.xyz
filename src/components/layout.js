@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, headerClasses=`` }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -23,8 +23,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <div className="bg-splatter min-h-screen">
+      <Header
+        headerClasses={headerClasses}
+        siteTitle={data.site.siteMetadata.title}
+      />
       <div>
         <main>{children}</main>
         <footer className="pt-16 max-w-4xl mx-auto text-sm text-center pb-8">
@@ -33,7 +36,7 @@ const Layout = ({ children }) => {
               __html: `<!-- Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->`,
             }}
           />
-          <div className="text-center text-plum mb-16 flex gap-4 justify-center">
+          <div className="text-center text-plum mb-5 flex gap-4 justify-center">
             <a
               target="_blank"
               rel="noreferrer noopener"
@@ -108,6 +111,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  headerClasses: PropTypes.string,
 }
 
 export default Layout

@@ -10,8 +10,8 @@ import MyFormcarry from "../components/MyFormcarry"
 const ContactPage = () => (
   <Layout>
     <SEO title="Send me a message" />
-    <section className="py-32" id="contact">
-      <div className="mx-auto max-w-3xl text-center pb-24">
+    <section  id="contact">
+      <div className="mx-auto max-w-3xl text-center pb-24 font-mono">
         <p className="text-xl px-8">
           If you have other questions, thoughts or concerns, or If you’d like to
           work on something together you should email{" "}

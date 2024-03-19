@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: [
-        "Source Sans Pro",
+        `Mona Sans`,
         `-apple-system`,
         `system-ui`,
         `BlinkMacSystemFont`,
@@ -16,14 +16,8 @@ module.exports = {
         `Arial`,
         `sans-serif`,
       ],
-      serif: [
-        `-apple-system`,
-        `system-ui`,
-        `BlinkMacSystemFont`,
-        `Segoe UI`,
-        `serif`,
-      ],
       mono: [
+        `Space Mono`,
         `ui-monospace`,
         `SFMono-Regular`,
         `Menlo`,
@@ -33,20 +27,35 @@ module.exports = {
         `Courier New`,
         `monospace`,
       ],
+      script: [`Shantell Sans`, `Space Mono`, `Courier New`, `monospace`],
+    },
+    fontSize: {
+      xs: [`.8rem`, `1.4`],
+      sm: [`1rem`, `1.4`],
+      base: [`1.25rem`, `1.5`],
+      lg: [`1.363rem`, `1.4`],
+      xl: [`1.663rem`, `1.4`],
+      "2xl": [`1.953rem`, `1.4`],
+      "3xl": [`2.441rem`, `1.4`],
+      "4xl": [`2.752rem`, `1.4`],
+      "5xl": [`3.815rem`, `1.2`],
+      "6xl": [`4.168rem`, `1.2`],
+      "7xl": [`4.5rem`, `1.2`],
+      "8xl": [`5.65rem`, `1.2`],
+      "9xl": [`6.75rem`, `1.2`],
+      "10xl": [`7.5rem`, `1.2`],
     },
     extend: {
-      colors: {
-        primary: `#00ccbd`,
-        secondary: `#2d3748`,
-        dark: `#212529`,
-        plum: `#CCA4C9`,
-        violet: `#512E4F`,
-        darkviolet: `#3A0C39`,
-        lime: `#C2FE0C`,
-        mindaro: `#EAFC88`,
+      aspectRatio: {
+        sd: `4 / 3`,
       },
-      lineHeight: {
-        base: `1.2`,
+      colors: {
+        "violet-blue": `#621EF3`,
+        pink: `#FD2D78`,
+        green: `#E9EF31`,
+        aqua: `#3CFFD0`,
+        blue: `#00FFEE`,
+        orange: `#e05915`,
       },
     },
   },
