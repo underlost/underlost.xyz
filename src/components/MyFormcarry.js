@@ -24,7 +24,7 @@ function MyFormcarry() {
       <div className="bg-white px-8 py-8 border-l border-r border-black">
         <form
           name="contact"
-          action="/thank-you"
+          action="/thank-you/"
           method="POST"
           data-netlify="true"
         >
